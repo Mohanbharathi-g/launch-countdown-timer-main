@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --clr-Grayish-blue: hsl(237, 18%, 59%);
+  --clr-Soft-red: hsl(345, 95%, 68%);
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --clr-Very-dark-blue: hsl(235, 16%, 14%);
+  --clr-Very-dark-blue: hsl(234, 17%, 12%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Red Hat Text', sans-serif;
+  background-color: var(--clr-Dark-desaturated-blue);
+  background-image: url(../images/bg-stars.svg);
+}
+
+/* global css */
+img {
+  /* width: 100%; */
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+main {
+  width: 95%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-image: url(../images/bg-stars.svg);
+  margin-bottom: 2rem;
+}
+.countdowm-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.card {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card h1 {
+  width: 100%;
+  color: var(--clr-Soft-red);
+  background-color: var(--clr-Very-dark-blue);
+  padding: 1.25rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15), -2px -2px 2px rgba(0, 0, 0, 0.15);
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.card p {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--clr-Grayish-blue);
+  font-size: 1rem;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-White);
+  text-transform: uppercase;
+}
+footer {
+  margin-top: 5rem;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 0;
+  /* margin-bottom: 20px; */
+  background-image: url(../images/pattern-hills.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.icon:hover {
+  background-color: var(--clr-Soft-red);
+  transition: 0.3s all;
+}
+
+@media screen and (min-width: 767px) {
+  .card h1 {
+    padding: 2rem;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card h1 {
+    padding: 2.5rem;
+    font-size: 3rem;
+  }
+}
